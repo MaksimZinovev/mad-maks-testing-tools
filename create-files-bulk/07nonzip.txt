@@ -1,0 +1,5 @@
+#	Strings which are reserved characters in MSDOS/Windows. Cannot be zipped in Windows.
+LPT2
+LPT1
+PRN
+CON

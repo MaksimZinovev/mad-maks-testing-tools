@@ -22,3 +22,8 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Git cannot handle
+
+create-files-bulk/non-zip/
+

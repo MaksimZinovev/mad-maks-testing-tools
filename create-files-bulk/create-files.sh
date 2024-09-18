@@ -21,8 +21,13 @@ mv "${input_file}_clean" "$input_file"
 # Create the output directory if it doesn't exist
 mkdir -p output
 
-# Read each line from the input file and create a file in the output directory
+# Read each line from the input file, ignoring lines starting with '#'
 while IFS= read -r name; do
-  touch "output/${name}.txt"
+  # Skip lines starting with '#'
+  if [[ $name == \#* ]]; then
+    continue
+  fi
+  # Create the file and add the input file name as content
+  echo "$input_file" > "output/${name}.txt"
   echo "File created: output/${name}.txt"
 done < "$input_file"
