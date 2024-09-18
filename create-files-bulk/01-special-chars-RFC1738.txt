@@ -1,0 +1,24 @@
+# Special characters as per RFC 1738 section 2.2 (supported filenames in Windows )
+valid
+space a
+name-<>
+name~
+name"
+name"
+name#
+name%
+name~
+name{
+name}
+name|
+name
+name^
+name~
+name[]
+name`
+name;
+name?
+name:
+name@
+name=
+name&
